@@ -33,7 +33,8 @@ while (true) {
         } else {
             alert("Opción no válida.");
         }
-    } else if (membrecia == '2') {
+    } 
+    else if (membrecia == '2') {
         horario = prompt("Elija su horario de disponibilidad:\n1. 8 AM - Profesor Pablo Diaz\n2. 10 AM - Profesor Adrian Lopez\n3. 4 PM - Profesora Sofia Garcia");
         if (horario == '1') {
             alert("Has elegido el horario de 8 AM con el Profesor Pablo Diaz.");
@@ -42,18 +43,36 @@ while (true) {
         } else if (horario == '3') {
             alert("Has elegido el horario de 4 PM con la Profesora Sofia Garcia.");
         } else {
-            alert("Opción no válida.");
+            alert("Opción invalida");
         }
-    } else if (membrecia == '3') {
+    } 
+    else if (membrecia == '3') {
         nombreApellido = prompt("Ingrese su nombre y apellido:");
         alert(`Nombre y apellido ingresados: ${nombreApellido}`);
-    } else if (membrecia == '4') {
-        fechasDisponibles = prompt("Ingrese las fechas disponibles:");
-        alert(`Fechas disponibles ingresadas: ${fechasDisponibles}`);
-    } else if (membrecia == '5') {
+    } 
+    else if (membrecia == '4') {
+        fechasDisponibles = prompt("Ingrese la fecha en la que desea comenzar:\n1. 3 de junio\n2. 10 de junio\n3. 17 de junio\n4. 24 de");
+        if (fechasDisponibles == '1'){
+            alert(`Comenzaras el dia: 3 de junio`);
+        }
+        else if (fechasDisponibles == '2'){
+            alert('Comenzaras el dia: 10 de junio')
+        }
+        else if (fechasDisponibles == '3'){
+            alert('Comenzaras el dia: 17 de junio')
+        }
+        else if (fechasDisponibles == '4'){
+            alert('Comenzaras el dia: 24 de junio')
+        }
+        else {
+            alert('Opcion invalida')
+        }
+    }
+    else if (membrecia == '5') {
         alert("Inscripción completa.");
         break;
-    } else if (membrecia == '0') {
+    } 
+    else if (membrecia == '0') {
         alert("Saliendo del sistema.");
         break;
     } else {
